@@ -1,25 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-CA">
 <head>
-  <meta charset="utf-8">
-  <title>Project 3</title>
-  <meta name="description" content="project 3 description">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <meta charset="utf-8">
+    <title>Project 3</title>
+    <meta name="description" content="project 3 description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../js/app3.js" defer></script>
+    
+
+    <style>
+        #header {
+            background-color: #333; 
+            padding: 15px; 
+            position: relative;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        #titleAndBackButton {
+            display: flex;
+            align-items: center;
+        }
+
+        #yearDropdownContainer3 {
+            padding-right: 30px;
+        }
+    </style>
 </head>
 
 <body>
     <div id="header">
-        <a href="/" class="button">Back</a>
-
-        <h1>GDP per Capita and Suicide Rates: A Global Examination</h1>
+        <div id="titleAndBackButton">
+            <a href="/" class="button">Back</a>
+            <h1>GDP per Capita and Suicide Rates: A Global Examination</h1>
+        </div>
+        
+        <div id="yearDropdownContainer3">
+            <label for="yearDropdown3">Select Year:</label>
+            <select id="yearDropdown3"></select>
+        </div>        
     </div>
 
-    <div id="graph">
-        <p>My chart goes here</p>
-    </div>
+    <div id="graph3"></div>
 </body>
 
 </html>
